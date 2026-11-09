@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Muhammad Raka Prasetya | Portfolio</title>
+
+    <meta
+      name="description"
+      content="Portfolio pribadi Muhammad Raka Prasetya, pelajar Rekayasa Perangkat Lunak yang tertarik pada Web Development dan teknologi."
+    />
+
+    <meta name="author" content="Muhammad Raka Prasetya" />
+    <meta name="theme-color" content="#0c0b14" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        /* Gaya untuk area kontak email di bagian bawah */
+.email-contact-container {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.email-text {
+    font-size: 16px;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+/* Gaya dasar Tombol Email */
+.email-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara ikon dan teks */
+    background-color: #2563eb; /* Warna biru modern universal */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px; /* Sudut melengkung halus */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+/* Efek saat tombol diarahkan kursor (Hover) */
+.email-btn:hover {
+    background-color: #1d4ed8; /* Warna biru sedikit lebih gelap */
+    transform: translateY(-2px); /* Tombol sedikit terangkat */
+    box-shadow: 0 6px 12px -2px rgba(37, 99, 235, 0.3);
+}
+
+/* Efek saat tombol diklik */
+.email-btn:active {
+    transform: translateY(0);
+}
+
+/* Gaya ikon SVG agar selaras dengan teks */
+.email-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+    </style>
+
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="#home" class="logo"> RAKA<span>.</span> </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Buka menu navigasi"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <p class="greeting">HELLO, I'M</p>
+
+          <h1>
+            Muhammad Raka
+            <span>Prasetya.</span>
+          </h1>
+
+          <h2>Student & Aspiring Web Developer</h2>
+
+          <p class="hero-description">
+            Saya adalah pelajar Rekayasa Perangkat Lunak yang memiliki
+            ketertarikan pada dunia teknologi, pemrograman, dan pengembangan
+            website. Saya senang mempelajari hal baru, mengembangkan
+            keterampilan, dan membangun sesuatu melalui teknologi.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary"> Explore My Work → </a>
+
+            <a
+              href="https://github.com/raka616"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              Visit GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Bungkus foto ke dalam card agar layout dan bayangannya tetap konsisten -->
+          <div class="visual-card profile-card">
+            <img
+              src="foto-raka.jpg"
+              alt="Muhammad Raka Prasetya"
+              class="profile-img"
+            />
+          </div>
+
+          <div class="floating-shape shape-one"></div>
+          <div class="floating-shape shape-two"></div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="section-heading">
+          <p class="section-label">GET TO KNOW ME</p>
+
+          <h2>About <span>Me</span></h2>
+
+          <p class="section-description">
+            Mengenal lebih jauh tentang diri saya, pendidikan, dan perjalanan
+            belajar.
+          </p>
+        </div>
+
+        <div class="about-content">
+          <p class="about-text">
+            Perkenalkan, saya Muhammad Raka Prasetya, seorang siswa SMK Negeri
+            64 Jakarta jurusan Rekayasa Perangkat Lunak (RPL). Saya memiliki
+            minat dalam pengembangan website dan teknologi informasi. Bagi saya,
+            belajar pemrograman bukan hanya tentang menulis kode, tetapi juga
+            memahami bagaimana sebuah ide dapat diwujudkan menjadi sesuatu yang
+            bermanfaat. Saya terus berusaha meningkatkan kemampuan melalui
+            pembelajaran mandiri dan pengerjaan berbagai proyek.
+          </p>
+
+          <div class="profile-info">
+            <div class="info-card">
+              <span>Nama</span>
+              <strong>Muhammad Raka Prasetya</strong>
+            </div>
+
+            <div class="info-card">
+              <span>Sekolah</span>
+              <strong>SMK Negeri 64 Jakarta</strong>
+            </div>
+
+            <div class="info-card">
+              <span>Jurusan</span>
+              <strong>Rekayasa Perangkat Lunak</strong>
+            </div>
+
+            <div class="info-card">
+              <span>Periode Pendidikan</span>
+              <strong>2024 - 2027</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNICAL SKILLS -->
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="section-label">MY EXPERTISE</p>
+
+          <h2>Technical <span>Skills</span></h2>
+
+          <p class="section-description">
+            Pilih salah satu teknologi di bawah ini untuk mengetahui penjelasan
+            dan fungsinya.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <button
+            class="skill-card"
+            data-group="skills"
+            data-key="html"
+            aria-expanded="false"
+          >
+            <span class="skill-symbol">&lt;/&gt;</span>
+            <span>HTML</span>
+            <small>Click to explore ↗</small>
+          </button>
+
+          <button
+            class="skill-card"
+            data-group="skills"
+            data-key="css"
+            aria-expanded="false"
+          >
+            <span class="skill-symbol">#</span>
+            <span>CSS</span>
+            <small>Click to explore ↗</small>
+          </button>
+
+          <button
+            class="skill-card"
+            data-group="skills"
+            data-key="javascript"
+            aria-expanded="false"
+          >
+            <span class="skill-symbol">JS</span>
+            <span>JavaScript</span>
+            <small>Click to explore ↗</small>
+          </button>
+
+          <button
+            class="skill-card"
+            data-group="skills"
+            data-key="php"
+            aria-expanded="false"
+          >
+            <span class="skill-symbol">PHP</span>
+            <span>PHP</span>
+            <small>Click to explore ↗</small>
+          </button>
+
+          <button
+            class="skill-card"
+            data-group="skills"
+            data-key="laravel"
+            aria-expanded="false"
+          >
+            <span class="skill-symbol">L</span>
+            <span>Laravel</span>
+            <small>Click to explore ↗</small>
+          </button>
+
+          <button
+            class="skill-card"
+            data-group="skills"
+            data-key="mysql"
+            aria-expanded="false"
+          >
+            <span class="skill-symbol">DB</span>
+            <span>MySQL</span>
+            <small>Click to explore ↗</small>
+          </button>
+        </div>
+
+        <!-- SKILL DETAIL -->
+<div class="detail-panel" id="skillsDetail" hidden>
+
+    <div class="detail-top">
+        <span class="detail-label">SKILL OVERVIEW</span>
+        <button class="detail-close" data-close="skills" aria-label="Tutup detail skill">✕</button>
+    </div>
+
+    <!-- Element ini wajib ada karena dipanggil oleh document.getElementById di JS kamu -->
+    <h3 id="skillsTitle"></h3>
+    <p id="skillsDescription"></p>
+
+</div>
+
+
+        <!-- OTHER KNOWLEDGE -->
+        <div class="other-skills">
+          <h3>Other Knowledge</h3>
+
+          <div class="knowledge-list">
+            <span>MVC Architecture</span>
+            <span>Database Management</span>
+            <span>CRUD Operations</span>
+            <span>Responsive Web Design</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="section-label">MY RECENT WORK</p>
+
+          <h2>Featured <span>Projects</span></h2>
+
+          <p class="section-description">
+            Beberapa proyek yang saya kerjakan sebagai bagian dari proses
+            belajar dan mengembangkan kemampuan di bidang teknologi.
+          </p>
+        </div>
+
+        <div class="projects-container">
+  <!-- PROJECT 01 -->
+  <article class="project-card">
+    <div class="project-preview preview-news">
+      <!-- Taruh gambar png di sini, hapus tag span dan p lama -->
+      <img src="berita.png" alt="News Portal" class="project-img">
+    </div>
+
+    <div class="project-info">
+      <span class="project-number">PROJECT 01</span>
+      <h3>News Portal</h3>
+      <p>
+        Website portal berita untuk mengelola dan menampilkan informasi
+        menggunakan Laravel dan MySQL.
+      </p>
+      <span class="tech-stack"> Laravel · PHP · MySQL </span>
+    </div>
+  </article>
+
+  <!-- PROJECT 02 -->
+  <article class="project-card">
+    <div class="project-preview preview-shop">
+      <!-- Taruh gambar png di sini, hapus tag span dan p lama -->
+      <img src="toko.png" alt="E-Commerce" class="project-img">
+    </div>
+
+    <div class="project-info">
+      <span class="project-number">PROJECT 02</span>
+      <h3>E-Commerce</h3>
+      <p>
+        Website toko online dengan fitur autentikasi pengguna dan
+        pengelolaan data menggunakan sistem CRUD.
+      </p>
+      <span class="tech-stack"> PHP · MySQL · CRUD </span>
+    </div>
+  </article>
+
+  <!-- PROJECT 03 -->
+  <article class="project-card">
+    <div class="project-preview preview-portfolio">
+      <!-- Taruh gambar png di sini, hapus tag span dan p lama -->
+      <img src="portofolio-raka.png" alt="Personal Portfolio" class="project-img">
+    </div>
+
+    <div class="project-info">
+      <span class="project-number">PROJECT 03</span>
+      <h3>Personal Portfolio</h3>
+      <p>
+        Website portfolio pribadi untuk memperkenalkan profil,
+        kemampuan, minat, dan hasil karya.
+      </p>
+      <span class="tech-stack"> HTML · CSS · JavaScript </span>
+    </div>
+  </article>
+</div>
+
+      </section>
+
+      <!-- MY INTERESTS -->
+      <section id="interests" class="section">
+        <div class="section-heading">
+          <p class="section-label">BEYOND TECHNOLOGY</p>
+
+          <h2>My <span>Interests</span></h2>
+
+          <p class="section-description">
+            Selain teknologi, ada beberapa hal yang saya sukai dan menjadi
+            bagian dari aktivitas serta pengembangan diri.
+          </p>
+        </div>
+
+        <div class="interests-container">
+          <button
+            class="interest-card"
+            data-group="interests"
+            data-key="web"
+            aria-expanded="false"
+          >
+            <span class="interest-icon">💻</span>
+            <strong>Web Development</strong>
+            <small>Click to explore ↗</small>
+          </button>
+
+          <button
+            class="interest-card"
+            data-group="interests"
+            data-key="technology"
+            aria-expanded="false"
+          >
+            <span class="interest-icon">⚙️</span>
+            <strong>Technology</strong>
+            <small>Click to explore ↗</small>
+          </button>
+
+          <button
+            class="interest-card"
+            data-group="interests"
+            data-key="workout"
+            aria-expanded="false"
+          >
+            <span class="interest-icon">🏋️</span>
+            <strong>Workout</strong>
+            <small>Click to explore ↗</small>
+          </button>
+
+          <button
+            class="interest-card"
+            data-group="interests"
+            data-key="taekwondo"
+            aria-expanded="false"
+          >
+            <span class="interest-icon">🥋</span>
+            <strong>Taekwondo</strong>
+            <small>Click to explore ↗</small>
+          </button>
+        </div>
+
+        <!-- INTERESTS DETAIL -->
+<div class="detail-panel" id="interestsDetail" hidden>
+
+    <div class="detail-top">
+        <span class="detail-label">INTEREST OVERVIEW</span>
+        <button class="detail-close" data-close="interests" aria-label="Tutup detail minat">✕</button>
+    </div>
+
+    <h3 id="interestsTitle"></h3>
+    <p id="interestsDescription"></p>
+
+</div>
+
+      </section>
+
+      <!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="section-heading">
+    <p class="section-label">LET'S CONNECT</p>
+
+    <h2>
+      Let's Build Something
+      <span>Great.</span>
+    </h2>
+
+    <p class="section-description">
+      Saya terbuka untuk belajar, berbagi ide, berdiskusi, dan
+      mengembangkan pengalaman baru di bidang teknologi.
+    </p>
+  </div>
+
+  <!-- Wrapper untuk tombol agar sejajar berdampingan -->
+  <div class="contact-buttons">
+    <a
+      href="mailto:email-kamu@example.com"
+      class="btn btn-primary"
+    >
+      Send Me a Message ↗
+    </a>
+    
+    <a
+      href="https://github.com/raka616"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-secondary"
+    >
+      Visit My GitHub ↗
+    </a>
+  </div>
+</section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+       <p>&copy; <span id="current-year"></span> Muhammad Raka Prasetya. All rights reserved.</p>
+
+      <a
+        href="https://github.com/raka616"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub ↗
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
